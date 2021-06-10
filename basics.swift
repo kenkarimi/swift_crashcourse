@@ -29,6 +29,15 @@ print(myDouble);
 var myBoolean: Bool = true;
 print(myBoolean);
 
+let num1: Float = 17;
+let num2: Float  = 4;
+let result = num1/num2;
+print(result);
+
+let names = ["Anna", "Alex", "Brian", "Jack", "Ken"];
+let length = names.count;
+print("Array length: \(length)");
+
 if(myBoolean) { 
     print("True with brackets");
 }
