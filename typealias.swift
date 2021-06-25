@@ -39,4 +39,3 @@ func didEnterCode(code: String) {
 typealias PromoCodeValidationFunction = ((String) -> Bool)?
 
 var validationFunction: PromoCodeValidationFunction
-
