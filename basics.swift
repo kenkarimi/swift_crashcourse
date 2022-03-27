@@ -1,15 +1,15 @@
 import Swift;
 print("Hello world");
 
-//Consonants use the let keyword.
-let myConsonant: String = "This is a consonant";
+//Constants use the let keyword.
+let myConsonant: String = "This is a constant";
 print(myConsonant);
 
 //Varaibles use the var keyword.
 var myVariable: String = "This is a variable";
 print(myVariable);
 
-/*Unlike consonants, variables can be reassigned after initial assignment*/
+/*Unlike constants, variables can be reassigned after initial assignment*/
 var languageName: String = "Swift";
 languageName = "Swift++";
 print(languageName);
@@ -34,7 +34,7 @@ let num2: Float  = 4;
 let result = num1/num2;
 print(result);
 
-let names = ["Anna", "Alex", "Brian", "Jack", "Ken"];
+let names: Array = ["Anna", "Alex", "Brian", "Jack", "Ken"];
 let length = names.count;
 print("Array length: \(length)");
 
@@ -87,7 +87,7 @@ if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secon
 //Implicitly unwrapped optionals. Useful when an optional’s value is confirmed to exist immediately after the optional is first defined and can definitely be assumed to exist at every point thereafter.
 var secondPossibleNumber = "345";
 var secondConvertedNumber: Int! = Int(secondPossibleNumber); //Implicitly unwrap now since we know the string value can definitively be converted into an integer(So no need to check with if statement). Remember that by default the type would be Int? without our intervention.
-var convertedValue: Int = secondConvertedNumber;
+var convertedValue: Int = secondConvertedNumber; //You still have to assign it to another variable. You can't just use secondConvertedNumber(unless you use it with the '!' suffix again in the print statement below) because it will show the value with the word Optional as the prefix e.g. in this case, 'Optional(354)' 
 print("Implicitly converted number: \(convertedValue)"); //Without passing the secondConvertedNumber to convertedValue, we would have had to still use the suffix ! to access the optional inside secondConvertedNumber during the print.
 
 //Error Handling
@@ -111,6 +111,9 @@ print("Success. Age is greater than 0");
 
 //Precondition
 //Assertions help you find mistakes and incorrect assumptions during development, and preconditions help you detect issues in production.
+//The difference between assertions and preconditions is in when they’re checked: Assertions are checked only in debug builds,
+//but preconditions are checked in both debug and production builds. In production builds, the condition inside an assertion isn’t evaluated.
+//This means you can use as many assertions as you want during your development process, without impacting performance in production.
 let index: Int = 5;
 precondition(index > 0, "Index must be greater than zero.");
 print("Life goes on regardless");

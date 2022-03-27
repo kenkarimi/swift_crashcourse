@@ -30,7 +30,7 @@ for tickMark in 0..<minutes {
 let minuteInterval: Int = 5;
 
 //Avoids printing 20 and just prints 0, 5, 10, 15. Since it's from, to.
-for tickMark in stride(from: 0, to: minutes, by: minuteInterval) { 
+for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
     print("Minute: \(tickMark)"); //result: 0, 5, 10, 15
 }
 

@@ -78,9 +78,10 @@ if (favouriteGenres.isEmpty) {
 favouriteGenres.insert("Jazz");
 print(favouriteGenres);
 
-let removedGenre: String! = favouriteGenres.remove("Classical"); //We use ! to unwrap/make it literal since there's a chance it could be nil. In real life, we're sure it's not, so we'll make it literal.
+let removedGenre: String? = favouriteGenres.remove("Classical"); // Use optional since there's a chance it could be nil. In real life, we're sure it's not, so we'll make it literal.
+
 if(removedGenre != nil){
-    print("\(removedGenre!)? I'm over it");
+    print("\(removedGenre!)? I'm over it"); //We use ! to unwrap/make it literal
 } else {
     print("My music taste pretty much remains the same.");
 }
@@ -133,17 +134,19 @@ airports["LHR"] = "London Heathrow";
 print(airports);
 
 //Alternative Update dictionary value
-let oldValue: String! = airports.updateValue("Dublin Airport", forKey: "DUB"); //Make it a literal type since it could be nil(to avoid error)
-print("The old value for DUB was \(oldValue!)."); //Remove optional/unwrap.
-let airportName: String! = airports["DUB"];
-print("The new value for DUB is \(airportName!)");
+let oldValue_optional: String! = airports.updateValue("Dublin Airport", forKey: "DUB"); //Make it a literal type since it could be nil(to avoid error)
+let oldValue: String = oldValue_optional;
+print("The old value for DUB was \(oldValue).");
+let airportName_optional: String! = airports["DUB"];
+let airportName: String = airportName_optional;
+print("The new value for DUB is \(airportName)");
 
 //Remove key value pair from dictionary.
 airports["JKIA"] = nil;
 print(airports);
 
 //Remove also by:
-let removedValue: String! = airports.removeValue(forKey: "DUB");
+let removedValue: String? = airports.removeValue(forKey: "DUB");
 if removedValue != nil {
     print("The removed airport's name is \(removedValue!).");
 } else {

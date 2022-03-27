@@ -28,7 +28,7 @@ joe.friend = Person(name: "Alice")
 //Also, Once joe goes away, anything that's connected to it that's weak as a proxy goes away too.
 
 //Output if friend is strong:
-    /*Bob is initialized
+    /*Joe is initialized
       Alice is initialized
     */
 

@@ -9,7 +9,7 @@ func greet(person: String) -> String { //This function is different from the fun
 print(greet(person: "Brian"));
 
 func greetAgain(person: String) -> String {
-    return "Hello, " + person + "!";
+    return "Hello again, " + person + "!";
 }
 
 print(greetAgain(person: "Anna"));
