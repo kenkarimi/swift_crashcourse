@@ -15,7 +15,7 @@ print("4 fits into 17 four times and leaves a remainder of \(f)");
 
 //Addition assignment operator(Similar to C)
 var g = 1;
-g += 2; //g + 1; //Increments operation by 1;
+g += 2; //g = g + 2; //Increments operation by 2;
 print(g);
 
 //Comparison operators.

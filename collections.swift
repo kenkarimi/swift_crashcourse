@@ -34,7 +34,7 @@ print(shoppingList[0]);
 shoppingList[0] = "Pasta";
 print(shoppingList[0]);
 
-shoppingList[3...4] = ["Bananas"];
+shoppingList[3...4] = ["Bananas"]; //index 3 & 4 both replaced with bananass
 print(shoppingList);
 
 //insert at index without replacing the current item at that index.
