@@ -67,7 +67,7 @@ letters.insert("a");
 print(letters); //Still only shows one 'a; because sets only allow for an item to appear once.
 
 var favouriteGenres: Set<String> = ["Rock", "Classical", "Rock", "Indie"];
-print(favouriteGenres); //Only prints Indie, Rock and Classical. The second index of 'Rock' is a repetition hence ignored.
+print(favouriteGenres); //Only prints Rock, Indie and Classical. The second index of 'Rock' is a repetition hence ignored.
 
 if (favouriteGenres.isEmpty) {
     print("As far as music goes, I'm not picky.")
