@@ -6,7 +6,7 @@ import Swift;
 
 //Example of a messy looking dictionary.
 /*
-var address: [String: String] = {"": ""}
+var address: [String: String] = ["": ""]
 
 func validateAddress(address: [String: String]) {
 

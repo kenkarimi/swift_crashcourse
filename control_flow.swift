@@ -6,7 +6,7 @@ for name in names {
     print("For In: \(name)!")
 }
 
-//If you wan't array to be enumerated
+//If you want array to be enumerated
 let primes = [2, 3, 5, 7, 11];
 
 for (n, prime) in primes.enumerated() {
