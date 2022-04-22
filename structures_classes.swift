@@ -34,7 +34,7 @@ struct Truck {
     }
 }
 
-//instances of car
+//instances of truck
 var faw: Truck = Truck(c: "black", m: "FAW")
 
 var truck2 = faw
