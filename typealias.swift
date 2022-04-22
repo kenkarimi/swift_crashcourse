@@ -12,8 +12,11 @@ func validateAddress(address: [String: String]) {
 
 }
 
-validateCode(address: address);
+validateAddress(address: address);
 */
+
+//Problem:
+ //Within the parameters of the function declaration 'validateAddress' we have to declare the dictionary type again(address: [String: String])
 
 //Solution:
 
@@ -27,15 +30,27 @@ func validateAddress(address: Address) {
 
 validateAddress(address: address);
 
-//Example 2:
+//Example 2: (closure)
 
-/*var validateFunction: ((String) -> Bool)?
+/*var validateFunction: ((String) -> Bool)? = { (code) in
+    return true
+}
 
 func didEnterCode(code: String) {
-    let result: validateFunction?(code)
+    let result = validateFunction!(code)
+    print(result)
 }*/
 
-//Solution:
+//Solution
 typealias PromoCodeValidationFunction = ((String) -> Bool)?
 
-var validationFunction: PromoCodeValidationFunction
+var validateFunction: PromoCodeValidationFunction = { (code) in
+    return true
+}
+
+func didEnterCode(code: String) {
+    let result = validateFunction!(code)
+    print(result)
+}
+
+didEnterCode(code: "my_code")
