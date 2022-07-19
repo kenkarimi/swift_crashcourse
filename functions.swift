@@ -3,7 +3,7 @@ import Swift;
 //With parameters
 func greet(person: String) -> String { //This function is different from the function greet(person:,alreadyGreeted) below by virtue of having different parameters even though the names are the same.
     let greeting: String = "Hello, " + person + "!";
-    return greeting; 
+    return greeting;
 }
 
 print(greet(person: "Brian"));
