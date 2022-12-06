@@ -54,7 +54,7 @@ print("min is \(bounds.min) and max is \(bounds.max)");
 //The parameter name is used in the implementation of the function(function definition).
 //By default, parameters use their parameter name as their argument label. As seen in all the functions I've written above.
 
-//Example of function where parameter name is also used as argument name by default:
+//Example of function where parameter name is also used as argument label by default:
 func someFunction(firstParameterName: Int, secondParameterName: Int) {
     print("First: \(firstParameterName) Second: \(secondParameterName)");
 }

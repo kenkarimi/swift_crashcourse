@@ -97,7 +97,7 @@ for genre in favouriteGenres {
     print(genre);
 }
 
-/*You can perform other set operations such as Union, itersection, subtraction and symetric difference as per the documentation.*/
+/*You can perform other set operations such as Union, intersection, subtraction and symetric difference as per the documentation.*/
 
 
 
@@ -109,12 +109,12 @@ for genre in favouriteGenres {
 var namesOfIntegers: [Int: String] = [:];
 print(namesOfIntegers); //empty
 
-//Since context already prvides type information, you can insert the first key-value pair like this:
+//Since context already provides type information, you can insert the first key-value pair like this:
 namesOfIntegers[16] = "sixteen"; //Dictionary now contains 1 key value par.
 print(namesOfIntegers);
 
 //Creating a dictionary using a dictionary literal
-var airports: [String:String] = ["YYZ": "Toronto Person", "DUB": "Dublin", "JKIA": "Jommo Kenyatta International Airport"];
+var airports: [String: String] = ["YYZ": "Toronto Person", "DUB": "Dublin", "JKIA": "Jommo Kenyatta International Airport"];
 print(airports);
 
 print("The airports dictionary contains \(airports.count) items."); //Dictionary length.
