@@ -20,3 +20,11 @@ func functionThatsNeededByGuardReturn() -> Void {
 }
 
 print(functionThatsNeededByGuardReturn());
+
+//Guard statements
+func isThereANumberHere(possibleNumber: String) -> Int {
+    guard let unwrappedNumber = Int(possibleNumber) else { return 0 }
+    return unwrappedNumber
+}
+
+print(isThereANumberHere(possibleNumber: "123"))

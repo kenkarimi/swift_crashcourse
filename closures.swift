@@ -33,3 +33,9 @@ var isGreaterThanThreeLastFunction: ((Int) -> Void) = { (number) in
 }
 
 isGreaterThanThreeLastFunction(4);
+
+var addTwoNumbersClosure: ((Int, Int) -> Int) = { a, b in
+    return a + b
+}
+
+print(addTwoNumbersClosure(3, 2))

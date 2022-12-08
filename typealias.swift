@@ -3,7 +3,6 @@ import Swift;
 //Typealias
 //A way to create your own types. Reason this exists is for more complex types that might be confusing to follow.
 
-
 //Example of a messy looking dictionary.
 /*
 var address: [String: String] = ["": ""]
@@ -22,10 +21,10 @@ validateAddress(address: address);
 
 typealias Address = [String: String]
 
-var address: Address = ["": ""]
+var address: Address = ["Name": "John Doe"]
 
 func validateAddress(address: Address) {
-
+    print(address)
 }
 
 validateAddress(address: address);

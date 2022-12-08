@@ -40,4 +40,3 @@ joe.friend = Person(name: "Alice")
 
 //Also, joe.friend = nil would deinitialize Alice.
 //If joe would have been an optional(var joe: Person? = Person(name: "Joe")) then setting joe = nil would deinitialize BOTH Joe and Alice.
-
