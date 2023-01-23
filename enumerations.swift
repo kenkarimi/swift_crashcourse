@@ -6,6 +6,7 @@ import Swift;
 //You would then use if statements to do string comparisons whenever you need to know which state an order is in.
 //Problem with this method is it doesn't let other developers know that all three of these are part of the same process and it's also prone to typos each time you're doing a comparison.
 //Enums solve both these potential problems and makes things tidier.
+//Also, behind the scenes enums are usually just simple numbers, which are a lot faster than strings for computers to work with, thus making your application faster.
 
 enum Planet {
     case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
