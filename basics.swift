@@ -2,7 +2,7 @@ import Swift;
 print("Hello world");
 
 //Constants use the let keyword.
-var myConstant: String = "This is a constant";
+let myConstant: String = "This is a constant";
 print(myConstant);
 
 //Varaibles use the var keyword.
