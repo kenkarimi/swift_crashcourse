@@ -48,7 +48,7 @@ if(name == "Kennedy"){
     print("I'm sorry \(name), but I don't recognize you")
 }
 
-//Comparing tuples. Can be done if they have the same type and the same number of values.
+//Comparing tuples. Can be done if they have the same type and the       same number of values.
 if((1, "apple") < (2, "banana")){
     print("True. 1 is less than two so apple and banana aren't checked");
 }
@@ -56,7 +56,7 @@ if((2, "apple") < (2, "banana")){
     print("True. 2 and 2 are equal but apple is less than banana");
 }
 if((2, "banana") > (2, "apple")){
-    print("True. 2 and 2 are equal and banana is not greater than apple");
+    print("True. 2 and 2 are equal and banana is greater than apple");
 }
 if((2, "apple") == (2, "apple")){
     print("True. 2 and 2 are equal and apple and apple are equal");
