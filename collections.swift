@@ -166,3 +166,17 @@ for airportCode in airports.keys {
 for airportName in airports.values {
     print("Value: \(airportName)");
 }
+
+//A Swift dictionary of type [String: Any] is very similar to a JavaScript object and can be effectively interchanged when sending data between Swift and a JavaScript server environment.
+/**
+ *Here's why:
+ *Both are key-value stores: Both Swift dictionaries and JavaScript objects use a key-value mechanism to store data. Each key acts as a unique identifier for an associated value.
+ *Dynamically typed: Swift's [String: Any] and JavaScript objects are dynamically typed, meaning the data types of the values can vary. This flexibility allows for storing different data types within the same structure.
+*/
+var data: [String:Any] = ["user_id": "AXdcnFNcfysEAxfdYl", "phone": 0702466037, "email": "kennedymugera@gmail.com"]
+
+data["password"] = "fiveforfighting" //Update & add an extra key-value pair.
+
+for (dataKey, dataValue) in data {
+    print("Key: \(dataKey) Value: \(dataValue)")
+}
